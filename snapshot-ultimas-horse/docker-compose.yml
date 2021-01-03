@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    ports:
+      - '25565:25565'
+    volumes:
+      - 'data:/data'
+    environment:
+      ENABLE_AUTOPAUSE: 'TRUE'
+      EULA: 'TRUE'
+      LEVEL_TYPE: LARGEBIOMES
+      MAX_BUILD_HEIGHT: 256
+      MAX_TICK_TIME: '-1'
+      MEMORY: 8G
+      MOTD: '¡Ultimas Horse! on latest snapshot'
+      OVERRIDE_SERVER_PROPERTIES: 'TRUE'
+      SEED: UltimasHorse
+      SERVER_NAME: Blolol
+      USE_AIKAR_FLAGS: 'TRUE'
+      VERSION: SNAPSHOT
+      VIEW_DISTANCE: 15
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+
+volumes:
+  data: {}
