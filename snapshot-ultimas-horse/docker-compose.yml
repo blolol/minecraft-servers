@@ -14,7 +14,7 @@ services:
       MAX_BUILD_HEIGHT: 256
       MAX_TICK_TIME: '-1'
       MEMORY: 8G
-      MOTD: '¡Ultimas Horse! on latest snapshot'
+      MOTD: 'UltimasHorse on latest snapshot'
       OVERRIDE_SERVER_PROPERTIES: 'TRUE'
       SEED: UltimasHorse
       SERVER_NAME: Blolol
