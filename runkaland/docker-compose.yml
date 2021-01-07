@@ -29,7 +29,7 @@ services:
       VERSION: 1.16.4
       VIEW_DISTANCE: 15
       WHITELIST: Doolan,Gafwyn,Raws
-      WORLD: https://s3.amazonaws.com/minecraft/worlds/blolol-ultimas-horse-20210105.zip
+      WORLD: https://s3.amazonaws.com/minecraft/worlds/blolol-runkaland-20210105.zip
     restart: unless-stopped
     tty: true
     stdin_open: true
