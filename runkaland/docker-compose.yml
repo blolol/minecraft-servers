@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    ports:
+      - '25565:25565'
+    volumes:
+      - './config:/config'
+      - 'data:/data'
+    environment:
+      ENABLE_AUTOPAUSE: 'TRUE'
+      EULA: 'TRUE'
+      FORGEVERSION: 35.1.32
+      ICON: https://s3.amazonaws.com/minecraft/server-icons/blolol.png
+      LEVEL_TYPE: LARGEBIOMES
+      MAX_BUILD_HEIGHT: 256
+      MAX_TICK_TIME: '-1'
+      MEMORY: 8G
+      MODPACK: https://s3.amazonaws.com/minecraft/modpacks/blolol-runkaland-1.16.4-20210106-v0.5.zip
+      MOTD: Welcome to Runkaland!
+      OPS: Doolan,Gafwyn,Raws
+      OVERRIDE_SERVER_PROPERTIES: 'TRUE'
+      REMOVE_OLD_MODS: 'TRUE'
+      SEED: UltimasHorse
+      SERVER_NAME: Blolol
+      TYPE: FORGE
+      USE_AIKAR_FLAGS: 'TRUE'
+      VERSION: 1.16.4
+      VIEW_DISTANCE: 15
+      WHITELIST: Doolan,Gafwyn,Raws
+      WORLD: https://s3.amazonaws.com/minecraft/worlds/blolol-ultimas-horse-20210105.zip
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+
+volumes:
+  data: {}
