@@ -9,6 +9,7 @@ services:
       - './config:/config'
       - 'data:/data'
     environment:
+      DIFFICULTY: hard
       ENABLE_AUTOPAUSE: 'TRUE'
       EULA: 'TRUE'
       FORGEVERSION: 35.1.32
