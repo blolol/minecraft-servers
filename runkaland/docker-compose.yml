@@ -18,7 +18,7 @@ services:
       MAX_BUILD_HEIGHT: 256
       MAX_TICK_TIME: '-1'
       MEMORY: 8G
-      MODPACK: https://s3.amazonaws.com/minecraft/modpacks/blolol-runkaland-1.16.4-v1.1.zip
+      MODPACK: https://s3.amazonaws.com/minecraft/modpacks/blolol-runkaland-1.16.4-v1.2.zip
       MOTD: Welcome to Runkaland!
       OPS: Doolan,Gafwyn,Raws
       OVERRIDE_SERVER_PROPERTIES: 'TRUE'

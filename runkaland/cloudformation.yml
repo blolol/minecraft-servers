@@ -85,7 +85,7 @@ Parameters:
   ModPackUrl:
     Type: String
     Description: This ZIP file will be downloaded and unpacked each time the server starts.
-    Default: https://s3.amazonaws.com/minecraft/modpacks/blolol-runkaland-1.16.4-v1.1.zip
+    Default: https://s3.amazonaws.com/minecraft/modpacks/blolol-runkaland-1.16.4-v1.2.zip
 
   LevelSeed:
     Type: String
